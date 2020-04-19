@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./carousel.css" />
+        <title>Web Accessibility Carousel | W3</title>
+    </head>
+    <body>
+        <section id="myCarousel" class="carousel" aria-roledescription="carousel" aria-label="medicare rewards activities">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="controls">
+                        <button class="rotation pause" aria-label="Stop automatic slide show">
+                            <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="background" x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
+                                <rect class="border" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
+                                <polygon class="pause" points="17 8 17 20"></polygon>
+                                <polygon class="pause" points="24 8 24 20"></polygon>
+                                <polygon class="play" points="15 8 15 20 27 14"></polygon>
+                            </svg>
+                        </button>
+                        <button class="previous" aria-controls="myCarousel-items" aria-label="Previous Slide">
+                            <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="background" x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
+                                <rect class="border" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
+                                <polygon points="9 14 21 8 21 11 33 11 33 17 21 17 21 20"></polygon>
+                            </svg>
+                        </button>
+                        <button class="next" aria-controls="myCarousel-items" aria-label="Next Slide">
+                            <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="background" x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
+                                <rect class="border" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
+                                <polygon points="9 11 21 11 21 8 33 14 21 20 21 17 9 17"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="myCarousel-items" class="carousel-items" aria-live="off">
+                        <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                            <div class="carousel-image">
+                                <a href="#">
+                                    <img src="./slide_1.png" alt="complete activities">
+                                </a>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>
+                                    <a href="#" id="carousel-label-1">
+                                        Complete your activities
+                                    </a>
+                                </h3>
+                                <div class="hidden-xs hidden-sm">
+                                    <p>
+                                        <a href="#" id="carousel-label-1a">
+                                            <span class="contrast">
+                                                Earn up to $70 with your first activities. We’ll add activities to your account throughout the year.
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                            <div class="carousel-image">
+                                <a href="#">
+                                    <img src="./slide_2.png" alt="activities completed">
+                                </a>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>
+                                    <a href="#" id="carousel-label-2">
+                                        Let us know you’ve completed them
+                                    </a>
+                                </h3>
+                                <div>
+                                    <p>
+                                        <a href="#" id="carousel-label-2a">
+                                            <span class="contrast">
+                                                Tell us about your completed activities below. By checking the boxes, you are self-attesting to completing activities you’re eligible for based on your Evidence of Coverage (EOC).
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                            <div class="carousel-image">
+                                <a href="#">
+                                    <img src="./slide_3.png" alt="your rewards">
+                                </a>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>
+                                    <a href="#" id="carousel-label-3">
+                                        Earn (and enjoy) your rewards
+                                    </a>
+                                </h3>
+                                <div>
+                                    <p>
+                                        <a href="#" id="carousel-label-3a">
+                                            <span class="contrast">
+                                                Request to redeem your rewards at the bottom of this page to receive information in the mail about selecting a gift card from Walmart<sup>&#174;</sup>, CVS Pharmacy<sup>&#174;</sup> or Amazon.com.
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>       
+        </section> 
+        <script src="./carousel.js"></script>
+        <script src="./carousel-item.js"></script> 
+        <script src="./carousel-button.js"></script>
+        <script src="./carousel-pause-button.js"></script>
+    </body>
+</html>
