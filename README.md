@@ -1,4 +1,4 @@
-Auto-Rotating Image Carousel Example Design for Accessibility 
+Responsive Auto-Rotating Image Carousel Example Design for Accessibility 
 
 The following implementation of the carousel design pattern demonstrates features of the pattern that are essential to accessibility for carousels that automatically start rotating when the page loads. For instance, rotation stops when users move focus to any control or link in the carousel or hover the mouse over carousel content. The accessibility features section that follows the example describes these features in detail. The carousel and its description are adapted from the W3 organization.
 

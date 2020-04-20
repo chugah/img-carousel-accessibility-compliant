@@ -73,6 +73,17 @@ a, a:hover {
   }
 }
 
+@media (max-width: 414px) {
+  p {
+    margin-bottom: -1rem !important;
+  }
+
+  .carousel .carousel-item .carousel-caption a,
+  .carousel .carousel-item .carousel-caption span.contrast {
+    font-size: 0.5rem;
+  }
+}
+
 .carousel .carousel-item .carousel-caption h3 a {
   color: #000;
   font-size: 1.6rem;
@@ -91,6 +102,19 @@ a, a:hover {
     font-size: 0.8rem;
   } 
 } 
+
+@media (max-width: 414px) {
+  .carousel .carousel-item .carousel-caption h3 a {
+    font-size: 0.6rem;
+  } 
+} 
+
+@media (width: 320px) {
+  .carousel .carousel-item .carousel-caption h3 a {
+    display: none;
+  } 
+} 
+
 .carousel .carousel-item .carousel-caption a:hover,
 .carousel .carousel-item .carousel-caption span.contrast:hover {
   margin: 0; 
@@ -119,8 +143,8 @@ a, a:hover {
 }
 
 .carousel .controls button svg rect.background {
-  stroke:#1d1d1d;
-  fill: #1d1d1d;
+  stroke:#000;
+  fill: #000;
   stroke-width: 1px;
   opacity: 0.6;
 }
@@ -153,6 +177,12 @@ a, a:hover {
 @media (max-width: 767.98px) {
   .carousel .controls button.previous {
     right: 10%;
+  }
+}
+
+@media (max-width: 414px) {
+  .carousel .controls button.previous {
+    right: 15%;
   }
 }
 
