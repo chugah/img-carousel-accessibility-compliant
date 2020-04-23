@@ -3,13 +3,40 @@ a, a:hover {
 }
 
 .carousel .carousel-inner {
+  width: 100%;
   position: relative;
+}
+
+@media (min-width: 576px) {
+ .carousel-inner {
+    margin: -0.4% 0 0 -2.75% !important;
+    width: 540px !important;
+ }
+}
+
+@media (min-width: 768px) {
+ .carousel-inner {
+    margin: -0.25% 0 0 -2.25% !important;
+    width: 720px !important;
+ }
+}
+
+@media (min-width: 992px) {
+ .carousel-inner {
+    margin: -0.2% 0 0 -1.5% !important;
+   width: 960px !important;
+ }
+}
+
+@media (min-width: 1200px) {
+ .carousel-inner {
+    margin: -0.1% 0 0 -1.5% !important;
+    width: 1140px !important;
+ }
 }
   
 .carousel .carousel-item {
   display: none;
-  max-height: 400px;
-  max-width: 1200px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -32,6 +59,41 @@ a, a:hover {
   height: 100%;
   width: 100%;
 }
+
+@media (min-width:320px) {
+    .carousel-caption {
+      bottom: 0 !important;
+      top: 10% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .carousel-caption {
+      bottom: 0 !important;
+      top: 25% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .carousel-caption {
+      bottom: 0 !important;
+      top: 25% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-caption {
+      bottom: 0 !important;
+      top: 35% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-caption {
+      bottom: 0 !important;
+      top: 40% !important;
+    }
+}
   
 .carousel .carousel-item .carousel-caption a {
   text-decoration: none;
@@ -46,42 +108,38 @@ a, a:hover {
   font-weight: 400;
 }
 
-@media (max-width: 991.98px) {
-  .carousel .carousel-item .carousel-caption a,
-  .carousel .carousel-item .carousel-caption span.contrast {
-    font-size: 0.8rem;
-  }
 
-  .carousel-caption {
-    padding-top: 60px;
-    padding-bottom: 0;
-  }
+@media (min-width: 320px) {
+ .carousel-caption span.contrast {
+  font-size: 0.5rem !important;
+  margin-top: -5% !important;
+ }
 }
 
-@media (max-width: 767.98px) {
-  h3 {
-    margin-bottom: 0.05rem;
-  }
-
-  .carousel .carousel-item .carousel-caption a,
-  .carousel .carousel-item .carousel-caption span.contrast {
-    font-size: 0.6rem;
-  }
-
-  .carousel-caption {
-    padding-top: 80px;
-  }
+@media (min-width: 500px) {
+ .carousel-caption span.contrast {
+  font-size: 0.65rem !important;
+  margin-top: 0 !important;
+ }
 }
 
-@media (max-width: 414px) {
-  p {
-    margin-bottom: -1rem !important;
-  }
+@media (min-width: 576px) {
+ .carousel-caption span.contrast {
+  font-size: 0.7rem !important;
+  margin-top: 0 !important;
+ }
+}
 
-  .carousel .carousel-item .carousel-caption a,
-  .carousel .carousel-item .carousel-caption span.contrast {
-    font-size: 0.5rem;
-  }
+@media (min-width: 768px) {
+ .carousel-caption span.contrast {
+  font-size: 0.9rem !important;
+ }
+}
+
+@media (min-width: 992px) {
+ .carousel-caption span.contrast {
+  font-size: 1.1rem !important;
+ }
 }
 
 .carousel .carousel-item .carousel-caption h3 a {
@@ -91,29 +149,29 @@ a, a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 991.98px) {
-  .carousel .carousel-item .carousel-caption h3 a {
-    font-size: 1rem;
-  } 
+@media (min-width: 320px) {
+ .carousel .carousel-item .carousel-caption h3 a {
+  font-size: 0.7rem;
+ }
 }
 
-@media (max-width: 767.98px) {
-  .carousel .carousel-item .carousel-caption h3 a {
-    font-size: 0.8rem;
-  } 
-} 
+@media (min-width: 576px) {
+ .carousel .carousel-item .carousel-caption h3 a {
+  font-size: 1.2rem;
+ }
+}
 
-@media (max-width: 414px) {
-  .carousel .carousel-item .carousel-caption h3 a {
-    font-size: 0.6rem;
-  } 
-} 
+@media (min-width: 768px) {
+ .carousel .carousel-item .carousel-caption h3 a {
+  font-size: 1.4rem;
+ }
+}
 
-@media (width: 320px) {
-  .carousel .carousel-item .carousel-caption h3 a {
-    display: none;
-  } 
-} 
+@media (min-width: 992px) {
+ .carousel .carousel-item .carousel-caption h3 a {
+  font-size: 1.6rem;
+ }
+}
 
 .carousel .carousel-item .carousel-caption a:hover,
 .carousel .carousel-item .carousel-caption span.contrast:hover {
@@ -129,8 +187,6 @@ a, a:hover {
   line-height: 1.5;
   margin-bottom: 0;
 }
-
-/* Shared CSS for Pause, Next and Previous Slide Controls */
 
 .carousel .controls button {
   padding: 0;
@@ -154,8 +210,6 @@ a, a:hover {
   stroke: transparent;
   stroke-width: 2px;
 }
-
-/* Next and Previous Slide Controls */
 
 .carousel .controls button svg polygon {
   stroke: white;
@@ -211,8 +265,6 @@ a, a:hover {
   fill: white;
   stroke: white;
 }
-
-/* Common focus styling for svg buttons */
 
 .carousel .controls button:focus rect.background,
 .carousel .controls button:hover rect.background,
